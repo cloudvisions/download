@@ -7,8 +7,7 @@
   tasks:
   - name: Basic Configuration
     eos_command:
-     commands: configure terminal, vrf instance GT300, vlan 300
-  tasks:
+     commands: configure terminal, vrf instance GT111, vlan 333
   - name: Basic2 Configuration
     eos_command:
-     commands: configure terminal, vrf instance GT200, vlan 200
+     commands: configure terminal, vrf instance GT222, vlan 222
