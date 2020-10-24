@@ -1,0 +1,14 @@
+- name: basic & VLAN Config
+  hosts: AristaSW
+
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+  - name: Basic Configuration
+    eos_command:
+     commands: configure terminal,username GT secret 5 Gt348309001!
+  tasks:
+  - name: VLAN Configuration
+    eos_command:
+     commands: vlan 10-19,vlan 25-27
