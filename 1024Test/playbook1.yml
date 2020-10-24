@@ -1,0 +1,14 @@
+- name: TEST1
+  hosts: AristaSW
+
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+  - name: Basic Configuration
+    eos_command:
+     commands: configure terminal, vrf GT
+  tasks:
+  - name: VLAN Configuration
+    eos_command:
+     commands: vlan 4094
